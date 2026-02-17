@@ -1,1 +1,66 @@
 @import "tailwindcss";
+
+:root {
+	--bg: #ffffff;
+	--ink: #111218;
+	--muted: #5c616b;
+	--accent: #2f3b7b;
+	--border: #e6e8ec;
+	--surface: #f7f8fa;
+	--serif: "Newsreader", "Source Serif 4", "Times New Roman", serif;
+	--sans: "Inter", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--font-sans, var(--sans));
+	line-height: 1.7;
+	letter-spacing: -0.01em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-serif, var(--serif));
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+}
+
+a {
+	text-decoration-color: var(--border);
+	text-underline-offset: 4px;
+}
+
+::selection {
+	background: rgba(47, 59, 123, 0.18);
+}
+
+@layer utilities {
+	.text-ink {
+		color: var(--ink);
+	}
+	.text-muted {
+		color: var(--muted);
+	}
+	.text-accent {
+		color: var(--accent);
+	}
+	.bg-surface {
+		background-color: var(--surface);
+	}
+	.bg-ink {
+		background-color: var(--ink);
+	}
+	.border-soft {
+		border-color: var(--border);
+	}
+	.measure {
+		max-width: 65ch;
+	}
+}
