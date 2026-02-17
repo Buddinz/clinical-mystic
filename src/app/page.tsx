@@ -76,7 +76,7 @@ export default function Home() {
                   <div className="flex flex-col gap-3">
                     <h3 className="text-xl">{framework.title}</h3>
                     <p className="text-sm text-muted">{framework.summary}</p>
-                    <p className="text-sm text-muted">{framework.detail}</p>
+                    <p className="text-sm text-muted">Category: {framework.category}</p>
                     <Link
                       href={`/frameworks#${framework.id}`}
                       className="text-sm font-medium text-accent transition hover:underline"

@@ -7,6 +7,8 @@
 	--accent: #2f3b7b;
 	--border: #e6e8ec;
 	--surface: #f7f8fa;
+	--galaxy-bg: #070a10;
+	--galaxy-panel: rgba(255, 255, 255, 0.06);
 	--serif: "Newsreader", "Source Serif 4", "Times New Roman", serif;
 	--sans: "Inter", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
 }
@@ -42,6 +44,23 @@ h4 {
 
 .hero-gradient {
 	background: radial-gradient(circle at top, rgba(47, 59, 123, 0.08), transparent 55%);
+}
+
+.atlas-content h2 {
+	margin-top: 1.5rem;
+	font-size: 1.4rem;
+	color: #ffffff;
+}
+
+.atlas-content ul {
+	margin: 1rem 0;
+	padding-left: 1.25rem;
+	list-style: disc;
+}
+
+.atlas-content p {
+	margin-top: 0.75rem;
+	color: rgba(255, 255, 255, 0.75);
 }
 
 a {
