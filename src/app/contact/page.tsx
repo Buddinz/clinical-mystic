@@ -13,8 +13,8 @@ export default function ContactPage() {
         <Container>
           <Stack>
             <p className="text-xs uppercase tracking-[0.28em] text-muted">Contact</p>
-            <h1 className="text-4xl sm:text-5xl">Make contact</h1>
-            <p className="measure text-base text-muted sm:text-lg">
+            <h1 className="text-4xl tracking-tight text-balance sm:text-5xl">Make contact</h1>
+            <p className="max-w-2xl text-base text-muted leading-8 sm:text-lg md:leading-9">
               Quiet contact only. No pitches. No noise. A short, clear note is enough.
             </p>
             <div className="measure">

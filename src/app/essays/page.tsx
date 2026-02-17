@@ -10,8 +10,8 @@ export default function EssaysPage() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Essays</p>
-              <h1 className="text-4xl sm:text-5xl">Essays and field notes</h1>
-              <p className="measure text-base text-muted sm:text-lg">
+              <h1 className="text-4xl tracking-tight text-balance sm:text-5xl">Essays and field notes</h1>
+              <p className="max-w-2xl text-base text-muted leading-8 sm:text-lg md:leading-9">
                 Short, precise essays that translate research into usable structure.
               </p>
             </div>

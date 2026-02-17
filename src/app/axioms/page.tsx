@@ -22,8 +22,8 @@ export default function AxiomsPage() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Axioms library</p>
-              <h1 className="text-4xl sm:text-5xl">Axioms for the Noble state</h1>
-              <p className="measure text-base text-muted sm:text-lg">
+              <h1 className="text-4xl tracking-tight text-balance sm:text-5xl">Axioms for the Noble state</h1>
+              <p className="max-w-2xl text-base text-muted leading-8 sm:text-lg md:leading-9">
                 Axioms are small, repeatable truths. They stabilize perception and keep decisions clean.
               </p>
             </div>

@@ -20,8 +20,10 @@ export default function AxiomPage({ params }: AxiomPageProps) {
         <Container>
           <Stack>
             <p className="text-xs uppercase tracking-[0.28em] text-muted">Axiom</p>
-            <h1 className="text-4xl sm:text-5xl">{axiom.title}</h1>
-            <p className="measure text-base text-muted sm:text-lg">{axiom.statement}</p>
+            <h1 className="text-4xl tracking-tight text-balance sm:text-5xl">{axiom.title}</h1>
+            <p className="max-w-2xl border-l border-soft pl-6 text-base text-muted leading-8 sm:text-lg md:leading-9">
+              {axiom.statement}
+            </p>
             <div className="flex items-center gap-4 text-xs uppercase tracking-[0.22em] text-muted">
               <span>{axiom.tag}</span>
               <span>Permalink: /axioms/{axiom.slug}</span>

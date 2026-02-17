@@ -10,8 +10,8 @@ export default function FrameworksPage() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Frameworks</p>
-              <h1 className="text-4xl sm:text-5xl">Pillars and frameworks</h1>
-              <p className="measure text-base text-muted sm:text-lg">
+              <h1 className="text-4xl tracking-tight text-balance sm:text-5xl">Pillars and frameworks</h1>
+              <p className="max-w-2xl text-base text-muted leading-8 sm:text-lg md:leading-9">
                 A small set of operating frameworks that keep the work stable, legible, and repeatable.
               </p>
             </div>

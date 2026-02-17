@@ -9,8 +9,8 @@ export default function AudioPage() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Audio</p>
-              <h1 className="text-4xl sm:text-5xl">Audio briefs</h1>
-              <p className="measure text-base text-muted sm:text-lg">
+              <h1 className="text-4xl tracking-tight text-balance sm:text-5xl">Audio briefs</h1>
+              <p className="max-w-2xl text-base text-muted leading-8 sm:text-lg md:leading-9">
                 Short audio notes designed for clear attention and measured pacing.
               </p>
             </div>

@@ -16,7 +16,7 @@ export default function Home() {
                 Private Research Platform
               </p>
               <div className="flex flex-col gap-4">
-                <h1 className="text-4xl tracking-tight sm:text-5xl">Stillness Is Structural</h1>
+                <h1 className="text-4xl tracking-tight text-balance sm:text-5xl">Stillness Is Structural</h1>
                 <p className="text-base text-muted">
                   Alternate headlines: Clarity Precedes Momentum · Stability Before Strategy · Signal Over Noise · Regulate. Observe.
                   Rebuild.
@@ -54,7 +54,7 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Thesis</p>
               <h2 className="text-3xl sm:text-4xl">Affected Homeostasis</h2>
             </div>
-                <p className="max-w-2xl text-base text-muted leading-8 sm:text-lg md:leading-9">
+                <p className="max-w-2xl border-l border-soft pl-6 text-base text-muted leading-8 sm:text-lg md:leading-9">
               Affected Homeostasis is a stabilization protocol for the human system. It treats emotional volatility as a measurable
               shift in baseline and builds a precise route back to steadiness without numbing the signal. The goal is not detachment,
               but a stable internal atmosphere that allows accurate perception. Many failures that look personal are structural. When a
@@ -73,7 +73,7 @@ export default function Home() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Framework pillars</p>
-              <h2 className="text-3xl sm:text-4xl">Frameworks that hold the work</h2>
+              <h2 className="text-3xl text-balance sm:text-4xl">Frameworks that hold the work</h2>
             </div>
             <Grid className="sm:grid-cols-2">
               {frameworks.map((framework) => (
@@ -103,7 +103,7 @@ export default function Home() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Axioms library</p>
-              <h2 className="text-3xl sm:text-4xl">Axioms for regulated thinking</h2>
+              <h2 className="text-3xl text-balance sm:text-4xl">Axioms for regulated thinking</h2>
             </div>
             <ul className="flex flex-col gap-4">
               {axiomPreview.map((axiom) => (
@@ -130,7 +130,7 @@ export default function Home() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Method</p>
-              <h2 className="text-3xl sm:text-4xl">A four-step forensic method</h2>
+              <h2 className="text-3xl text-balance sm:text-4xl">A four-step forensic method</h2>
             </div>
             <Grid className="sm:grid-cols-2 lg:grid-cols-4">
               {[
@@ -168,7 +168,7 @@ export default function Home() {
           <Stack>
             <div className="flex flex-col gap-3">
               <p className="text-xs uppercase tracking-[0.28em] text-muted">Work outputs</p>
-              <h2 className="text-3xl sm:text-4xl">A quiet catalog of outputs</h2>
+              <h2 className="text-3xl text-balance sm:text-4xl">A quiet catalog of outputs</h2>
             </div>
             <Grid className="sm:grid-cols-2 lg:grid-cols-4">
               {[
@@ -212,7 +212,7 @@ export default function Home() {
       <Section>
         <Container>
           <Stack>
-            <h2 className="text-3xl sm:text-4xl">A calm invitation</h2>
+            <h2 className="text-3xl text-balance sm:text-4xl">A calm invitation</h2>
             <p className="max-w-2xl text-base text-muted leading-8 sm:text-lg md:leading-9">
               If the work feels aligned, reach out quietly. No campaigns. No funnels.
             </p>
