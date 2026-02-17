@@ -1,21 +1,11 @@
-"use client";
-
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-interface SiteShellProps {
+interface SiteLayoutProps {
   children: ReactNode;
 }
 
-export function SiteShell({ children }: SiteShellProps) {
-  const pathname = usePathname();
-  const isFrameworks = pathname?.startsWith("/frameworks");
-
-  if (isFrameworks) {
-    return <>{children}</>;
-  }
-
+export default function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <div className="min-h-screen bg-white text-ink">
       <header className="border-b border-soft">

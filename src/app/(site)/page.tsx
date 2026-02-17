@@ -12,9 +12,7 @@ export default function Home() {
         <Container>
           <div className="flex min-h-screen flex-col justify-center py-24 md:py-32">
             <div className="flex flex-col gap-6">
-              <p className="text-xs uppercase tracking-[0.32em] text-muted">
-                Private Research Platform
-              </p>
+              <p className="text-xs uppercase tracking-[0.32em] text-muted">Private Research Platform</p>
               <div className="flex flex-col gap-4">
                 <h1 className="text-5xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
                   Stillness Is Structural
@@ -78,7 +76,7 @@ export default function Home() {
                     <p className="text-sm text-muted">{framework.summary}</p>
                     <p className="text-sm text-muted">Category: {framework.category}</p>
                     <Link
-                      href={`/frameworks#${framework.id}`}
+                      href={`/frameworks?id=${framework.id}`}
                       className="text-sm font-medium text-accent transition hover:underline"
                     >
                       View framework

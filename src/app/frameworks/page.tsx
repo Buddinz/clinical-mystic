@@ -1,11 +1,7 @@
-"use client";
-
-import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
-import { frameworks } from "@/data/frameworks";
 import { Suspense } from "react";
 import FrameworksClient from "./FrameworksClient";
+
+export const dynamic = "force-dynamic";
 
 export default function FrameworksPage() {
   return (
@@ -14,4 +10,3 @@ export default function FrameworksPage() {
     </Suspense>
   );
 }
-  const router = useRouter();

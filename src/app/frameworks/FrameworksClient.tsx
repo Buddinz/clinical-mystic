@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
 import { frameworks } from "@/data/frameworks";
 import {
   AtlasDrawer,
@@ -13,20 +12,20 @@ import {
 } from "@/components/frameworks";
 
 export default function FrameworksClient() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
   const [selectedFrameworkId, setSelectedFrameworkId] = useState<string | null>(null);
   const [mode, setMode] = useState<"galaxy" | "atlas">("galaxy");
   const [query, setQuery] = useState("");
   const [showSpine, setShowSpine] = useState(false);
 
   useEffect(() => {
-    const id = searchParams.get("id");
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
     if (id) {
       setSelectedFrameworkId(id);
       setMode("atlas");
     }
-  }, [searchParams]);
+  }, []);
 
   const filtered = useMemo(() => {
     if (!query) return frameworks;
@@ -60,7 +59,11 @@ export default function FrameworksClient() {
     setSelectedFrameworkId(id);
     setMode("atlas");
     setShowSpine(false);
-    router.push(`/frameworks?id=${id}`);
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      url.searchParams.set("id", id);
+      window.history.replaceState({}, "", url.toString());
+    }
   };
 
   const showGalaxy = mode === "galaxy";
@@ -192,7 +195,11 @@ export default function FrameworksClient() {
                 onClose={() => {
                   setSelectedFrameworkId(null);
                   setShowSpine(false);
-                  router.push("/frameworks");
+                  if (typeof window !== "undefined") {
+                    const url = new URL(window.location.href);
+                    url.searchParams.delete("id");
+                    window.history.replaceState({}, "", url.toString());
+                  }
                 }}
                 onRunSpine={() => setShowSpine(true)}
                 showSpine={showSpine}

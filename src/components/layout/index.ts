@@ -3,4 +3,3 @@ export { Section } from "./Section";
 export { Grid } from "./Grid";
 export { Stack } from "./Stack";
 export { Divider } from "./Divider";
-export { SiteShell } from "./SiteShell";

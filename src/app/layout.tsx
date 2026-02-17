@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
-import { SiteShell } from "@/components/layout";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -19,9 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${newsreader.variable} antialiased`}>
-        <SiteShell>{children}</SiteShell>
-      </body>
+      <body className={`${inter.variable} ${newsreader.variable} antialiased`}>{children}</body>
     </html>
   );
 }
