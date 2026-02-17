@@ -40,6 +40,10 @@ h4 {
 	font-weight: 500;
 }
 
+.hero-gradient {
+	background: radial-gradient(circle at top, rgba(47, 59, 123, 0.08), transparent 55%);
+}
+
 a {
 	text-decoration-color: var(--border);
 	text-underline-offset: 4px;
